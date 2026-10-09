@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.lado-azul {
+  background-color: #0050e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lado-azul h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.lado-form {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 380px;
+}
+
+.formulario h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 12px;
+  margin-bottom: 20px;
+}
+
+.campo input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.icono {
+  color: #666;
+  font-size: 14px;
+}
+
+.olvido {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #0050e6;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.boton {
+  width: 100%;
+  padding: 14px;
+  background-color: #0050e6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #003fb8;
+}
+
+.registro {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  margin-top: 20px;
+}
+
+.registro a {
+  color: #0050e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media (max-width: 992px) {
+  .lado-azul h1 {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .lado-azul {
+    display: none;
+  }
+
+  .lado-form {
+    background-color: white;
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+}
